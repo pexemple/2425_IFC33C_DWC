@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+
+<body>
+    <script>
+        //No se distingue entre numeros y flotantes
+        // 64 bits en 
+
+        var x = 3.987654;
+        var y = 4;
+        var a = "99";
+
+        console.log(Number.MAX_VALUE);
+        console.log(Number.MIN_VALUE);
+
+        var z = parseInt(a);
+        console.log(a, typeof a, z, typeof z);
+        var zz = parseFloat(z);
+        console.log(zz);
+        var zzz = parseInt(x);
+        console.log(zzz);
+
+        var w = parseInt(x * y);
+        console.log(w);
+
+        var s = x.toFixed(2); // indica que solo queremos dos decimales
+        console.log(s);
+
+        var b = "hola"; // string
+
+        var c = parseInt(b);
+        console.log(c);
+
+        console.log(Number.isNaN(b)); //Flase -> b no tiene el valor NaN
+        console.log(Number.isNaN(x)); //Flase -> x no tiene el valor NaN
+        console.log(Number.isNaN(c)); //True -> c tiene el valor NaN
+        console.log(isNaN(b)) // ?????
+    </script>
+
+
+</body>
+
+</html>

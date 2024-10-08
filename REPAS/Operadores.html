@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+
+<body>
+    <script>
+        // Operadores de assignacion
+
+        var x = 5;
+        var y = 7;
+
+        var esVerdad = true;
+
+        var a = "Ho";
+        var b = "la";
+
+        // Concatenar
+
+        var c = a + b;
+
+        console.log(a)
+        console.log(b)
+        console.log(c)
+
+        //Operadores aritmeticos - Numeros
+
+        x = x * 4;
+        x = x + 4;
+        x = x - 4;
+        x = x % 4; // Modilo - Obtener el resto de una division
+        x = x ** 4; // Exponente
+
+        x++; // x = x + 1;
+        x--; // x = x - 1;
+
+        x += 4 // x = x + 4;
+        x *= 4 // x = x * 4;
+        x -= 4 // x = x - 4;
+        x /= 4 //x = x / 4;
+        x **= 4 // x = x**4;
+        x %= 4; // x = x % 4;
+
+        //Operadiores de compararacion 
+
+        /*
+            ==  -> igual
+            !=  -> Distinto
+            >=  -> Mayor o igual
+            >   -> Mayor
+            <=  -> Menor o igual
+            <   -> Menor
+            ? // Operador ternario -> (Y < X)?"Hola" : "adios"
+
+            === -> Igual en valor y en tipo
+            !== -> Distinto e valor o distinto en tipo
+        */
+
+        // Para las comparaciones utilizaremos === y !=
+
+        var  x = 5;
+
+        console.log("x == 5", x == 5)
+        console.log("x == '5'", x == '5')
+        console.log(typeof x, typeof '5')
+        console.log("x == '5'",x == '5')
+        console.log("x === '5'", x === '5')
+
+        console.log("x != 5", x != 5)
+        console.log("x != '5'", x != '5')
+        console.log(typeof x, typeof '5')
+        console.log("x !== 5", x !==5)
+        console.log("x !== '5'", x !== '5')
+
+        // Cuando hagamos peticiones asincronas debemos asegurarnos
+        // de que los numeros son numeros y lso strings son strings
+
+        var k = 9;
+        var l = "7";
+
+        console.log(k + parseInt(l));
+
+    </script>
+
+</body>
+
+</html>
