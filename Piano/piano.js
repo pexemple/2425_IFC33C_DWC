@@ -3,7 +3,6 @@ let partitures = [
     {titulo: 'Happy Birthday', notes: ['DO', 'DO', 'RE', 'DO', 'FA', 'MI', 'DO', 'DO', 'RE', 'DO', 'SOL', 'FA']}
 ];
 
-addCerca(['MI','SOL']);
 
 function Nota(nombre) {
     this.nombre = nombre;
@@ -51,6 +50,8 @@ function cercador() {
         }
     }
 }
+
+addCerca(['DO','DO']);
 
 cercador();
 
