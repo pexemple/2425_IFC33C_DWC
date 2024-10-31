@@ -51,7 +51,7 @@ function cercador() {
     }
 }
 
-addCerca(['DO','DO']);
+addCerca(['DO','RE']);
 
 cercador();
 

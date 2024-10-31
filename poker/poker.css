@@ -1,0 +1,9 @@
+    /* Estilos básicos para las cartas */
+    .carta {
+        display: inline-block;
+        margin: 10px;
+        width: 100px;
+      }
+      img {
+        width: 100%;
+      }
