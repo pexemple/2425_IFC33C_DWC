@@ -84,12 +84,28 @@ function jugar() {
   let contenedor = document.getElementById('cartasSeleccionadas');
   contenedor.innerHTML = '';
   let htmlCartas = '';
-  CartasAleatorias.forEach(carta => {/*
-      let img = document.createElement('img');
-      img.src = carta.imagen;
-      img.classList.add('carta');
-      contenedor.appendChild(img);*/
+  CartasAleatorias.forEach(carta => {
     htmlCartas += `<img src="${carta.imagen}" class="carta" alt="${carta.valor}">`;
     contenedor.innerHTML = htmlCartas;
   });
+
+  let valores = [];
+  let hayDuplicados = false;
+
+  CartasAleatorias.forEach(carta => {
+    if (valores.includes(carta.valor)) {
+      hayDuplicados = true;
+    } else {
+      valores.push(carta.valor);
+    }
+  });
+
+  let mensaje = document.getElementById('mensajeResultado');
+  if (hayDuplicados) {
+    mensaje.textContent = '¡Has ganado! Hay cartas con el mismo valor.';
+    mensaje.style.color = 'green';
+  } else {
+    mensaje.textContent = 'Has perdido. No hay cartas con el mismo valor.';
+    mensaje.style.color = 'red';
+  }
 }
